@@ -53,8 +53,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+            Je suis un développeur Full Stack passionné. Mon objectif est de créer des applications web modernes et performantes.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
