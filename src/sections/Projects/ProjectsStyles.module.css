@@ -1,25 +1,259 @@
+.portfolio {
+  background-color: var(--background-color);
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  aspect-ratio: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+  filter: blur(2px) brightness(70%);
+}
+
+.portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--btn-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 1.5rem;
+  color: var(--btn-text-color);
+  margin: 0 0 0.5rem 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.portfolio-layer p {
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  color: var(--btn-text-color);
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: var(--btn-text-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.portfolio-layer a i {
+  font-size: 1.2rem;
+  color: var(--btn-color);
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+
+  .portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .portfolio-layer {
+    padding: 1rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive pour très petits écrans */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .portfolio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio-layer {
+    padding: 0.75rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 1rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 0.75rem;
+  }
+
+  .portfolio-layer a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .portfolio-layer a i {
+    font-size: 1rem;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
   text-align: center;
 
   img {
-    max-width: 250px;
+    /* max-width: 250px; */
     align-self: center;
-    background-color: var(--project-card-bg);
-    border-radius: 20px;
+    /* background-color: var(--project-card-bg); */
+    border-radius: 2rem;
+    filter: blur(2px) brightness(70%);
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: .5s ease;
   }
 
-  a {
+  .projectCard {
+    position: relative;
+    border-radius: 2rem;
+    background-color: var(--project-card-bg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     width: fit-content;
-    text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
   }
+  .projectCard h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+  }
+  .projectCard p {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+  }
+  .projectCard a{
+    text-decoration: none;
+  }
 
-  a:hover {
+  .projectCard img:hover {
     transform: scale(1.05);
   }
+}
+
+.project-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.projectCard:hover .project-layer {
+  transform: translateY(0);
+}
+
+.project-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--project-card-bg);
+  border-radius: 50%;
+}
+
+.project-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
 }
 
 .projectsContainer {

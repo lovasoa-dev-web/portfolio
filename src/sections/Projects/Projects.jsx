@@ -3,37 +3,51 @@ import viberr from '../../assets/viberr.png';
 import freshBurger from '../../assets/fresh-burger.png';
 import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/fitlift.png';
-import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
+  const projects = [
+    {
+      src: viberr,
+      link: "https://github.com/Ade-mir/company-landing-page-2",
+      h4: "Viberr",
+      p: "Music Streaming App"
+    },
+    {
+      src: freshBurger,
+      link: "https://github.com/Ade-mir/company-landing-page-2",
+      h4: "Fresh Burger",
+      p: "Hamburger Restaurant"
+    },
+    {
+      src: hipsster,
+      link: "https://github.com/Ade-mir/company-landing-page-2",
+      h4: "Hipsster",
+      p: "Glasses Shop"
+    },
+    {
+      src: fitLift,
+      link: "https://github.com/Ade-mir/company-landing-page-2",
+      h4: "FitLift",
+      p: "Fitness App"
+    }
+  ];
+
   return (
-    <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
-      <div className={styles.projectsContainer}>
-        <ProjectCard
-          src={viberr}
-          link="https://github.com/lovasoa-dev-web/free-fire"
-          h3="Free fire"
-          p="Streaming App"
-        />
-        <ProjectCard
-          src={freshBurger}
-          link="https://github.com/lovasoa-dev-web/fresh-burger"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
-        />
-        <ProjectCard
-          src={hipsster}
-          link="https://github.com/lovasoa-dev-web/hipsster"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/lovasoa-dev-web/fitlift"
-          h3="FitLift"
-          p="Fitness App"
-        />
+    <section id="projects" className={styles.portfolio}>
+      <h2 className={styles.heading}>Latest <span>Project</span></h2>
+      <div className={styles['portfolio-container']}>
+        {projects.map((project, index) => (
+          <div key={index} className={styles['portfolio-box']}>
+            <img src={project.src} alt={project.h4} />
+            <div className={styles['portfolio-layer']}>
+              <h4>{project.h4}</h4>
+              <p>{project.p}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
