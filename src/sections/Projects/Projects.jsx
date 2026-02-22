@@ -43,7 +43,7 @@ function Projects() {
               <h4>{project.h4}</h4>
               <p>{project.p}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                <i class='bx bx-link-external' ></i>
               </a>
             </div>
           </div>

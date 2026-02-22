@@ -10,11 +10,15 @@
   margin-bottom: 4rem;
   color: var(--text-color);
   font-size: 2.5rem;
+  text-align: center;
+}
+.portfolio h2 span {
+  color: var(--main-color);
 }
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2.5rem;
   max-width: 1200px;
@@ -27,6 +31,7 @@
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
+  background-color: var(--project-card-bg);
   overflow: hidden;
   display: flex;
   aspect-ratio: 1;
@@ -95,6 +100,7 @@
   background: var(--btn-text-color);
   border-radius: 50%;
   flex-shrink: 0;
+  color: var(--btn-color);
 }
 
 .portfolio-layer a i {
