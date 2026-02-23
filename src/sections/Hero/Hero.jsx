@@ -1,7 +1,5 @@
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/william.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -12,26 +10,19 @@ import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
+      <div>
         <img
           src={heroImg}
           className={styles.hero}
           alt="Photo de profil de william"
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>

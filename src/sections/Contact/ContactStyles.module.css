@@ -60,6 +60,29 @@ input[type='submit']:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.successMessage {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 2px solid #4caf50;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 16px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (width >= 800px) {
   textarea,
   input:not([type='submit']) {

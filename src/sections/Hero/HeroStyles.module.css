@@ -6,7 +6,8 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
-  margin-top:1rem;
+  margin-top: 0;
+  padding-top: 3rem;
 
   .hero {
     max-width: 180px;
@@ -52,20 +53,6 @@
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   }
-}
-
-.colorModeContainer {
-  position: relative;
-}
-
-.colorMode {
-  position: absolute;
-  right: 0;
-  width: 25px;
-}
-
-.colorMode:hover {
-  cursor: pointer;
 }
 
 .description {

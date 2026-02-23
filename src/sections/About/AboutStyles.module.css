@@ -35,15 +35,6 @@
 .aboutImg img:hover {
   transform: scale(1.05);
 }
-
-.heading {
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-
-.heading span {
-  color: var(--btn-color);
-}
 .btn {
     background-color: var(--btn-color);
     color: var(--btn-text-color);

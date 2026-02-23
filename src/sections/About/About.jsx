@@ -11,7 +11,7 @@ function About() {
         <img src={aboutImg} alt="Photo de William" />
       </div>
       <div className={styles.aboutContent}>
-        <h1 className={styles.heading}>à propos</h1>
+        <h1>à propos</h1>
         <h2>Frontend Developer!</h2>
         <p>
           Je suis Lovasoa William RANDRIANANTENAINA, développeur web passionné spécialisé en React et JavaScript.
