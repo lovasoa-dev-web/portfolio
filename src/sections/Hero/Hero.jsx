@@ -53,7 +53,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-            Je suis un développeur Full Stack passionné. Mon objectif est de créer des applications web modernes et performantes.
+            Je suis un développeur Full Stack passionné.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>

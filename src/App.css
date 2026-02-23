@@ -22,13 +22,19 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  margin: 0 auto 60px;
+  margin: 0 auto 0 auto;
+  scroll-behavior: smooth;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
+}
+
+section {
+  padding: 1rem 0.5rem;
 }
 
 h1,
@@ -73,10 +79,15 @@ p {
 .hover {
   cursor: pointer;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.5rem;
+}
 
 @media (width >= 800px) {
   #root {
-    gap: 100px;
+    gap: 40px;
   }
   h1 {
     font-size: 40px;
@@ -95,7 +106,7 @@ p {
 
   @media (width >= 1400px) {
     #root {
-      gap: 200px;
+      gap: 60px;
     }
     h1 {
       font-size: 48px;
