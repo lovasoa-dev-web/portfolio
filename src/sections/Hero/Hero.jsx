@@ -40,7 +40,7 @@ function Hero() {
           <br />
           RANDRIANANTENAINA
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Dévéloppeur <span>FrontEnd</span></h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
