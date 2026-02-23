@@ -22,14 +22,14 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="React" />
         <SkillList src={checkMarkIcon} skill="Laravel" />
         <SkillList src={checkMarkIcon} skill="Bootstrap" />
-        <SkillList src={checkMarkIcon} skill="Tailwind css" />
+        <SkillList src={checkMarkIcon} skill="Git / Github" />
       </div>
       <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Python" />
         <SkillList src={checkMarkIcon} skill="Sql" />
         <SkillList src={checkMarkIcon} skill="Node" />
-        <SkillList src={checkMarkIcon} skill="Git / Github" />
+        <SkillList src={checkMarkIcon} skill="Tailwind css" />
       </div>
     </section>
   );

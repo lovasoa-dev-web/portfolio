@@ -34,7 +34,7 @@ function Projects() {
 
   return (
     <section id="projects" className={styles.portfolio}>
-      <h2 className={styles.heading}>Latest <span>Project</span></h2>
+      <h1 className={styles.heading}>Project</h1>
       <div className={styles['portfolio-container']}>
         {projects.map((project, index) => (
           <div key={index} className={styles['portfolio-box']}>

@@ -6,14 +6,9 @@
   box-sizing: border-box;
 }
 
-.portfolio h2 {
+.portfolio h1 {
   margin-bottom: 4rem;
-  color: var(--text-color);
-  font-size: 2.5rem;
   text-align: center;
-}
-.portfolio h2 span {
-  color: var(--main-color);
 }
 
 .portfolio-container {
