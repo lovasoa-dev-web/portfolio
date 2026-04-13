@@ -29,7 +29,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Python" />
         <SkillList src={checkMarkIcon} skill="Sql" />
         <SkillList src={checkMarkIcon} skill="Node" />
-        <SkillList src={checkMarkIcon} skill="Tailwind css" />
+        <SkillList src={checkMarkIcon} skill="WordPress" />
       </div>
     </section>
   );

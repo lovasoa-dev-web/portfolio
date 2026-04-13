@@ -44,6 +44,12 @@ function Header() {
         />
       </nav>
 
+      <div
+        className={`${styles.menuOverlay} ${menuOpen ? styles.visible : ''}`}
+        onClick={() => setMenuOpen(false)}
+        aria-hidden="true"
+      />
+
       <img
         className={styles.colorMode}
         src={themeIcon}
@@ -51,7 +57,14 @@ function Header() {
         onClick={toggleTheme}
       />
 
-      <i className={`bx bx-menu ${styles.menuIcon}`} onClick={toggleMenu}></i>
+      <button
+        type="button"
+        className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}
+        onClick={toggleMenu}
+        aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+      >
+        <span className={styles.menuBurger}></span>
+      </button>
     </header>
   );
 }

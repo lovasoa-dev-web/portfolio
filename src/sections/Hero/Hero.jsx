@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/william.png';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -11,10 +12,38 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme } = useTheme();
+  const [typedText, setTypedText] = useState('FrontEnd');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [wordIndex, setWordIndex] = useState(0);
 
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+
+  useEffect(() => {
+    const words = ['FrontEnd', 'BackEnd'];
+    const currentWord = words[wordIndex];
+    const speed = isDeleting ? 80 : 140;
+    const pauseDelay = 1200;
+
+    let timer = null;
+
+    if (!isDeleting && typedText === currentWord) {
+      timer = setTimeout(() => setIsDeleting(true), pauseDelay);
+    } else if (isDeleting && typedText === '') {
+      setIsDeleting(false);
+      setWordIndex((prev) => (prev + 1) % words.length);
+    } else {
+      timer = setTimeout(() => {
+        const nextText = isDeleting
+          ? currentWord.slice(0, typedText.length - 1)
+          : currentWord.slice(0, typedText.length + 1);
+        setTypedText(nextText);
+      }, speed);
+    }
+
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting, wordIndex]);
 
   return (
     <section id="hero" className={styles.container}>
@@ -31,7 +60,13 @@ function Hero() {
           <br />
           RANDRIANANTENAINA
         </h1>
-        <h2>Dévéloppeur <span>FrontEnd</span></h2>
+        <h2>
+          Dévéloppeur{' '}
+          <span className={styles.typewriter}>
+            {typedText}
+            <span className={styles.cursor} />
+          </span>
+        </h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
