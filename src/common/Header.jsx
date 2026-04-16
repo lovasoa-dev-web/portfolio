@@ -3,8 +3,7 @@ import styles from './Header.module.css';
 import sun from '../assets/sun.svg';
 import moon from '../assets/moon.svg';
 import { useTheme } from './ThemeContext';
-import logoLight from '../assets/logo-noir.png';
-import logoDark from '../assets/logo-blanc.png';
+import logo from '../assets/logo1.png';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +26,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <a href="#" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-        <img src={theme === 'light' ? logoLight : logoDark} alt="Logo" className={styles.logoImg} />
+        <img src={logo} alt="Logo" className={styles.logoImg} />
       </a>
 
       <nav className={`${styles.navbar} ${menuOpen ? styles.active : ''}`}>

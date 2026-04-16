@@ -10,7 +10,7 @@ function Projects() {
       src: viberr,
       link: "https://github.com/Ade-mir/company-landing-page-2",
       h4: "Viberr",
-      p: "Music Streaming App"
+      p: "Music Streaming App Music Streaming App Music Streaming App"
     },
     {
       src: freshBurger,
