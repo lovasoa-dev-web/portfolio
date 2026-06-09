@@ -60,6 +60,8 @@ p {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 h2,

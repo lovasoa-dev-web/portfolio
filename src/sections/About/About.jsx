@@ -5,10 +5,10 @@ import Button from '../../common/Button.jsx';
 function About() {
   return (
     <section id="about" className={styles.container}>
-      <div className={styles.aboutImg} data-aos="fade-right" data-aos-duration="800" >
+      <div className={styles.aboutImg} data-aos="fade-up" data-aos-duration="800" >
         <img src={aboutImg} alt="Photo de William" />
       </div>
-      <div className={styles.aboutContent} data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+      <div className={styles.aboutContent} data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <h1>à propos</h1>
         <h2>Frontend Developer!</h2>
         <p>

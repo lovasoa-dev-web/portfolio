@@ -48,14 +48,14 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.hero} data-aos="fade-right" data-aos-duration="800">
+      <div className={styles.hero} data-aos="fade-up" data-aos-duration="800">
         <img
           src={heroImg}
           className={styles.heroImage}
           alt="Photo de profil de william"
         />
       </div>
-      <div className={styles.info} data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+      <div className={styles.info} data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <h1>
           Lovasoa William
           <br />
