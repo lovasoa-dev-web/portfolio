@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <header className={styles.header} data-aos='fade-up'>
+    <header className={styles.header}>
       <a href="#" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
         <img src={logo} alt="Logo" className={styles.logoImg} />
       </a>

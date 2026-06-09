@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background-color: #fff;
   --btn-color: #0987f2;
@@ -22,11 +26,18 @@
   --footer-text-color: #bbb;
 }
 
+html,
+body {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
 body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: 0;
+  min-height: 100vh;
   scroll-behavior: smooth;
   font-family: 'Roboto Mono', monospace;
 }
@@ -35,6 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 section {
