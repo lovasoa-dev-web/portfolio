@@ -72,6 +72,14 @@ function Projects() {
 
   const closeModal = () => setSelectedProject(null);
 
+  const handleModalAreaClick = (e) => {
+    // Prevent the overlay from also receiving the click
+    if (e && e.stopPropagation) e.stopPropagation();
+    // If the click happened on an interactive element (marked with .no-close), ignore it
+    if (e.target.closest && e.target.closest('.no-close')) return;
+    closeModal();
+  };
+
   const images = selectedProject ? [selectedProject.src, ...(selectedProject.gallerie || [])] : [];
 
   const prevSlide = () => {
@@ -123,7 +131,7 @@ function Projects() {
 
       {selectedProject && (
         <div className={styles['modal-overlay']} onClick={closeModal}>
-          <div className={styles['modal-content']} onClick={(e) => e.stopPropagation()}>
+          <div className={styles['modal-content']} onClick={handleModalAreaClick}>
             <header className={styles['modal-header']}>
               <div>
                 <h2>{selectedProject.h4}</h2>
@@ -131,7 +139,7 @@ function Projects() {
               </div>
               <button
                 type="button"
-                className={styles['modal-close']}
+                className={`${styles['modal-close']} no-close`}
                 onClick={closeModal}
                 aria-label="Fermer"
               >
@@ -141,24 +149,24 @@ function Projects() {
 
             <div className={styles['modal-body']}>
               <div className={styles['modal-gallery']}>
-                <div className={styles['modal-image-wrapper']}>
+                <div className={`${styles['modal-image-wrapper']} no-close`}>
                   <img
                     src={images[currentSlide]}
                     alt={`${selectedProject.h4} - slide ${currentSlide + 1}`}
                   />
                   <button
                     type="button"
-                    className={`${styles['carousel-control']} ${styles.prev}`}
+                    className={`${styles['carousel-control']} ${styles.prev} no-close`}
                     onClick={prevSlide}
                   >
-                    <i class="bx bx-chevrons-left" />
+                    <i className="bx bx-chevrons-left" />
                   </button>
                   <button
                     type="button"
-                    className={`${styles['carousel-control']} ${styles.next}`}
+                    className={`${styles['carousel-control']} ${styles.next} no-close`}
                     onClick={nextSlide}
                   >
-                    <i class="bx bx-chevrons-right" />
+                    <i className="bx bx-chevrons-right" />
                   </button>
                 </div>
 
@@ -169,7 +177,7 @@ function Projects() {
                       type="button"
                       className={`${styles['thumb-item']} ${
                         thumbIndex === currentSlide ? styles.active : ''
-                      }`}
+                      } no-close`}
                       onClick={() => setCurrentSlide(thumbIndex)}
                     >
                       <img src={image} alt={`Miniature ${thumbIndex + 1}`} />
@@ -201,7 +209,7 @@ function Projects() {
                       href={selectedProject.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={styles['modal-link']}
+                      className={`${styles['modal-link']} no-close`}
                     >
                       Voir le site
                     </a>
@@ -211,7 +219,7 @@ function Projects() {
                       href={selectedProject.linkGithub}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={styles['modal-link']}
+                      className={`${styles['modal-link']} no-close`}
                     >
                       Code source GitHub
                     </a>
