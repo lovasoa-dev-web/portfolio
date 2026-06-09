@@ -135,7 +135,7 @@ function Projects() {
                 onClick={closeModal}
                 aria-label="Fermer"
               >
-                ×
+                <i className="bx bx-x"></i>
               </button>
             </header>
 
@@ -151,14 +151,14 @@ function Projects() {
                     className={`${styles['carousel-control']} ${styles.prev}`}
                     onClick={prevSlide}
                   >
-                    ‹
+                    <i class="bx bx-chevrons-left" />
                   </button>
                   <button
                     type="button"
                     className={`${styles['carousel-control']} ${styles.next}`}
                     onClick={nextSlide}
                   >
-                    ›
+                    <i class="bx bx-chevrons-right" />
                   </button>
                 </div>
 

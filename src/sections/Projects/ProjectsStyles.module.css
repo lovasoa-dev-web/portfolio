@@ -163,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   animation: overlayFade 0.35s ease forwards;
 }
 
@@ -184,9 +184,10 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem 1.75rem 0;
+  gap: .75rem;
+  padding: 1rem 1.75rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-header h2 {
@@ -205,10 +206,11 @@
   background: var(--surface-color);
   border: 1px solid var(--surface-border-color);
   color: var(--text-color);
-  font-size: 2rem;
-  line-height: 1;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
-  padding: 0.5rem 0.75rem;
+  padding: 0.2rem;
   border-radius: 1rem;
   transition: background 0.25s ease, transform 0.25s ease;
 }
@@ -239,7 +241,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.06);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 12/7;
   min-height: 260px;
 }
 
@@ -267,11 +269,11 @@
 }
 
 .carousel-control.prev {
-  left: 1rem;
+  left: .75rem;
 }
 
 .carousel-control.next {
-  right: 1rem;
+  right: .75rem;
 }
 
 .gallery-thumbs {
@@ -315,10 +317,10 @@
 .modal-description,
 .modal-technologies,
 .modal-links {
-  background: var(--surface-color);
-  border-radius: 1.5rem;
+  /* background: var(--surface-color);
+  border-radius: 1.5rem; */
   padding: 1.25rem;
-  border: 1px solid var(--surface-border-color);
+  /* border: 1px solid var(--surface-border-color); */
 }
 
 .modal-description h3,
@@ -410,11 +412,6 @@
 
   .detail-button {
     padding: 0.75rem 1.2rem;
-  }
-
-  .modal-header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .modal-header h2 {
