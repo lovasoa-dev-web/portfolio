@@ -163,7 +163,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
+  margin: 1rem;
   animation: overlayFade 0.35s ease forwards;
 }
 
