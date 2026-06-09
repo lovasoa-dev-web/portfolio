@@ -1,0 +1,34 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 126px;
+  height: 50px;
+  padding: 0 1.15rem;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--btn-color);
+  border-color: var(--btn-color);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.solid {
+  /* Base solid button variant, kept for semantic extension. */
+}

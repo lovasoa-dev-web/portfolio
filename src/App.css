@@ -3,6 +3,8 @@
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
+  --surface-color: rgba(255, 255, 255, 0.95);
+  --surface-border-color: rgba(0, 0, 0, 0.08);
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
@@ -12,7 +14,9 @@
   --background-color: #131313;
   --btn-color: #fff;
   --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --project-card-bg: rgba(255, 255, 255, 0.05);
+  --surface-color: rgba(255, 255, 255, 0.08);
+  --surface-border-color: rgba(255, 255, 255, 0.12);
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
@@ -76,13 +80,9 @@ p {
   margin-bottom: 30px;
 }
 
-.hover {
-  cursor: pointer;
-}
 a{
   text-decoration: none;
   color: inherit;
-  font-size: 0.5rem;
 }
 
 @media (width >= 800px) {

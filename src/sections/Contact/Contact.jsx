@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ContactStyles.module.css';
+import Button from '../../common/Button.jsx';
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -21,13 +22,13 @@ function Contact() {
   };
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      <h1 className="sectionTitle" data-aos="fade-up" data-aos-duration="800">Contact</h1>
       {submitted && (
-        <div className={styles.successMessage}>
+        <div className={styles.successMessage} data-aos="fade-in" data-aos-duration="500">
           ✓ Message envoyé avec succès! Je te répondrai bientôt.
         </div>
       )}
-      <form
+      <form data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
         name="contact"
         method="POST"
         netlify
@@ -67,7 +68,7 @@ function Contact() {
             placeholder="Message"
             required></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <Button type="submit" className={styles.submitButton}>Submit</Button>
       </form>
     </section>
   );

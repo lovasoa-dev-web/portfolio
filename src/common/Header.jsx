@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import sun from '../assets/sun.svg';
 import moon from '../assets/moon.svg';
 import { useTheme } from './ThemeContext';
-import logo from '../assets/logo1.png';
+import logo from '../assets/logoW.png';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-aos='fade-up'>
       <a href="#" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
         <img src={logo} alt="Logo" className={styles.logoImg} />
       </a>

@@ -10,22 +10,22 @@ function Skills() {
 
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Compétences</h1>
-      <div className={styles.skillList}>
+      <h1 className="sectionTitle" data-aos="fade-up" data-aos-duration="800">Compétences</h1>
+      <div className={styles.skillList} data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
         <SkillList src={checkMarkIcon} skill="JavaScript" />
         <SkillList src={checkMarkIcon} skill="Php" />
       </div>
       <hr />
-      <div className={styles.skillList}>
+      <div className={styles.skillList} data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <SkillList src={checkMarkIcon} skill="React" />
         <SkillList src={checkMarkIcon} skill="Laravel" />
         <SkillList src={checkMarkIcon} skill="Bootstrap" />
         <SkillList src={checkMarkIcon} skill="Git / Github" />
       </div>
       <hr />
-      <div className={styles.skillList}>
+      <div className={styles.skillList} data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
         <SkillList src={checkMarkIcon} skill="Python" />
         <SkillList src={checkMarkIcon} skill="Sql" />
         <SkillList src={checkMarkIcon} skill="Node" />

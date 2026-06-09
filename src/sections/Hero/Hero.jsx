@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/william.png';
+import heroImg from '../../assets/will.png';
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -8,6 +8,7 @@ import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/cv.pdf';
+import Button from '../../common/Button.jsx';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -47,14 +48,14 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <div>
+      <div className={styles.hero} data-aos="fade-right" data-aos-duration="800">
         <img
           src={heroImg}
-          className={styles.hero}
+          className={styles.heroImage}
           alt="Photo de profil de william"
         />
       </div>
-      <div className={styles.info}>
+      <div className={styles.info} data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
         <h1>
           Lovasoa William
           <br />
@@ -81,9 +82,9 @@ function Hero() {
         <p className={styles.description}>
             Je suis un développeur Full Stack passionné.
         </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+        <Button href={CV} download>
+          Resume
+        </Button>
       </div>
     </section>
   );
