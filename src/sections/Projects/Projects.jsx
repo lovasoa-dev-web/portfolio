@@ -7,11 +7,11 @@ import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/fitlift.png';
 import restaurant from '../../assets/delice.png';
 import freeFire from '../../assets/free-fire.png';
-import gallery1 from '../../assets/portfolio1.jpg';
-import gallery2 from '../../assets/portfolio2.jpg';
-import gallery3 from '../../assets/portfolio3.jpg';
-import gallery4 from '../../assets/portfolio4.jpg';
-import gallery5 from '../../assets/portfolio5.jpg';
+import gallery1 from '../../assets/ajoutReservation.png';
+import gallery2 from '../../assets/recette.png';
+import gallery3 from '../../assets/apropos.png';
+import gallery4 from '../../assets/contact.png';
+import gallery5 from '../../assets/galerie.png';
 import gallery6 from '../../assets/portfolio6.jpg';
 
 function Projects() {
@@ -22,13 +22,15 @@ function Projects() {
     {
       id: 1,
       src: restaurant,
-      linkGithub: 'https://github.com/lovasoa-dev-web/Free-fire',
+      linkGithub: '',
       link: 'https://restaurantmodel.sc3xksm4783.universe.wf/#home',
       h4: 'Restaurant',
       p: 'Restaurant Website',
       description: 'Site de restaurant moderne avec menu dynamique, réservation, animation visuelle et interface responsive. Le projet met en avant l’identité visuelle, les plats et la navigation fluide pour l’utilisateur.',
-      technologie: ['WordPress', 'HTML', 'CSS', 'JavaScript'],
-      gallerie: [gallery1, gallery2, gallery3],
+      technologie: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'php'],
+      remarque: 'aaaaaaaaaaa',
+      gallerie: [gallery1, gallery2, gallery5],
+      linkMember: 'https://restaurantmodel.sc3xksm4783.universe.wf/login'
     },
     {
       id: 2,
@@ -203,6 +205,11 @@ function Projects() {
                   </div>
                 </div>
 
+                <div className={styles['modal-remarque']}>
+                  {selectedProject.remarque && (
+                    <p><span>⚠️ remarque : </span>{selectedProject.remarque}</p>)}
+                </div>
+
                 <div className={styles['modal-links']}>
                   {selectedProject.link && (
                     <a
@@ -210,8 +217,20 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
+                      title='voir en tant que visiteur'
                     >
-                      Voir le site
+                      Demo
+                    </a>
+                  )}
+                  {selectedProject.link && (
+                    <a
+                      href={selectedProject.linkMember}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${styles['modal-link']} no-close`}
+                      title='voir en tant que restaurateur'
+                    >
+                      pour les membres
                     </a>
                   )}
                   {selectedProject.linkGithub && (
