@@ -22,15 +22,15 @@ function Projects() {
     {
       id: 1,
       src: restaurant,
-      linkGithub: '',
+      // linkGithub: '',
       link: 'https://restaurantmodel.sc3xksm4783.universe.wf/#home',
       h4: 'Restaurant',
       p: 'Restaurant Website',
-      description: 'Site de restaurant moderne avec menu dynamique, réservation, animation visuelle et interface responsive. Le projet met en avant l’identité visuelle, les plats et la navigation fluide pour l’utilisateur.',
-      technologie: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'php'],
-      remarque: 'aaaaaaaaaaa',
+      description: "Projet de gestion de restaurant développé avec WordPress dans le cadre d'un projet académique. Cette plateforme permet aux visiteurs de découvrir le restaurant, consulter les menus, effectuer des réservations et accéder aux différentes informations de l'établissement à travers une interface moderne et responsive. Du côté administration, un espace dédié permet au restaurateur de gérer efficacement le contenu du site, les menus, les informations du restaurant ainsi que les différentes fonctionnalités nécessaires au bon fonctionnement de la plateforme.",
+      technologie: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'Themify Ultra'],
+      remarque: "Ce projet est actuellement hébergé dans un environnement de démonstration et n'est pas encore indexé par les moteurs de recherche.Selon le navigateur utilisé, un avertissement de sécurité peut apparaître lors de la première visite en raison du configuration temporaire du domaine de démonstration. Si un avertissement s'affiche, vous pouvez sélectionner « Avancé puis Continuer vers le site » afin d'accéder à la démonstration.",
       gallerie: [gallery1, gallery2, gallery5],
-      linkMember: 'https://restaurantmodel.sc3xksm4783.universe.wf/login'
+      linkMember: 'https://restaurantmodel.sc3xksm4783.universe.wf/login',
     },
     {
       id: 2,
@@ -190,7 +190,7 @@ function Projects() {
 
               <div className={styles['modal-details']}>
                 <div className={styles['modal-description']}>
-                  <h3>Description complète</h3>
+                  <h3>Description</h3>
                   <p>{selectedProject.description}</p>
                 </div>
 
@@ -210,6 +210,20 @@ function Projects() {
                     <p><span>⚠️ remarque : </span>{selectedProject.remarque}</p>)}
                 </div>
 
+                {selectedProject.linkMember && (
+                  <div className={styles['modal-info-block']}>
+                    <h3>Accès démonstration restaurateur</h3>
+                    <p>Utilisez ces identifiants pour vous connecter au compte restaurateur de la démo :</p>
+                    <ul>
+                      <li><strong>Utilisateur :</strong> restaurateur</li>
+                      <li><strong>Mot de passe :</strong> restaurateur</li>
+                    </ul>
+                    <p>
+                      Consultez la page de connexion via le bouton ci-dessous, puis connectez-vous avec ces informations.
+                    </p>
+                  </div>
+                )}
+
                 <div className={styles['modal-links']}>
                   {selectedProject.link && (
                     <a
@@ -217,20 +231,20 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='voir en tant que visiteur'
+                      title='Pour accéder à la démo, cliquez sur ce lien. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder à la démonstration.'
                     >
-                      Demo
+                      Voir la démo
                     </a>
                   )}
-                  {selectedProject.link && (
+                  {selectedProject.linkMember && (
                     <a
                       href={selectedProject.linkMember}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='voir en tant que restaurateur'
+                      title='Pour accéder au compte démo, cliquez sur ce lien. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
                     >
-                      pour les membres
+                      Compte Démo
                     </a>
                   )}
                   {selectedProject.linkGithub && (
