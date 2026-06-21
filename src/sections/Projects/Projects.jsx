@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
 import Button from '../../common/Button.jsx';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
+import gamerNet from '../../assets/viberr.png';
+import portfolioWebSite from '../../assets/fresh-burger.png';
 import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/fitlift.png';
 import restaurant from '../../assets/delice.png';
@@ -34,24 +34,24 @@ function Projects() {
     },
     {
       id: 2,
-      src: viberr,
-      linkGithub: 'https://github.com/Ade-mir/company-landing-page-2',
-      link: 'https://viberr.netlify.app/',
-      h4: 'Viberr',
-      p: 'Music Streaming App',
-      description: 'Application de musique avec interface immersive, lecture de playlists, sections artistes et albums. Le design met l’accent sur l’expérience utilisateur mobile-first et l’ergonomie.',
-      technologie: ['React', 'CSS', 'JavaScript', 'API'],
-      gallerie: [gallery3, gallery4],
+      src: gamerNet,
+      // linkGithub: 'https://github.com/Ade-mir/company-landing-page-2',
+      // link: 'https://viberr.netlify.app/',
+      h4: 'GameNet',
+      p: 'Réseau social pour joueurs (Projet en cours)',
+      description: "GameNet est un réseau social dédié aux joueurs permettant de partager des publications, gérer des amis, échanger des messages privés, rejoindre des clans et interagir avec la communauté. Ce projet est développé en PHP natif et MySQL dans le cadre de mon projet de fin d'études.",
+      technologie: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript']
+      // gallerie: [],
     },
     {
       id: 3,
-      src: freshBurger,
+      src: portfolioWebSite,
       linkGithub: 'https://github.com/Ade-mir/company-landing-page-2',
       link: 'https://freshburger.netlify.app/',
-      h4: 'Fresh Burger',
-      p: 'Hamburger Restaurant',
-      description: 'Landing page pour un restaurant de burgers avec animations d’interaction, menu responsive, et sections témoignages. Le projet est optimisé pour la conversion et la présentation produit.',
-      technologie: ['HTML', 'CSS', 'JavaScript', 'Responsive'],
+      h4: 'Portfolio Professionnel',
+      p: 'Portfolio moderne interactif développé avec React et Vite',
+      description: "Ce portfolio professionnel a été conçu pour présenter mon parcours, mes compétences techniques et les différents projets que j'ai réalisés dans le domaine du développement web.Développé avec React et Vite, il propose une interface moderne, responsive et optimisée pour offrir une expérience utilisateur fluide sur ordinateur, tablette et mobile.Le projet met en avant plusieurs fonctionnalités telles que la navigation fluide entre les sections, les animations interactives, la présentation détaillée des projets, le téléchargement du CV ainsi qu'un formulaire de contact permettant de faciliter les échanges professionnels.À travers ce projet, j'ai renforcé mes compétences en développement frontend, en conception d'interfaces utilisateur et en organisation d'une application React moderne.",
+      technologie: ['React', 'JavaScript','html','css','git', 'CSS', 'aos'],
       gallerie: [gallery2, gallery5],
     },
     {
