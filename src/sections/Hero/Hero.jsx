@@ -83,7 +83,7 @@ function Hero() {
             Je suis un développeur Full Stack passionné.
         </p>
         <Button href={CV} download>
-          Resume
+          Télécharger mon CV
         </Button>
       </div>
     </section>

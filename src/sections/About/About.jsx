@@ -10,11 +10,10 @@ function About() {
       </div>
       <div className={styles.aboutContent} data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <h1>à propos</h1>
-        <h2>Frontend Developer!</h2>
+        <h2>Développeur Web Full Stack Junior</h2>
         <p>
-          Je suis Lovasoa William RANDRIANANTENAINA, développeur web passionné spécialisé en React et JavaScript.
-          J{"'"}aime créer des expériences utilisateur modernes et intuitives. Avec une solide base en HTML, CSS et JavaScript,
-          je développe des applications web réactives et performantes.
+          je développe des applications web réactives et performantes.Développeur web motivé et passionné par les nouvelles technologies, je conçois des solutions web performantes, intuitives et adaptées aux besoins des utilisateurs. À travers la réalisation de projets concrets en PHP, JavaScript, React, Laravel, et WordPress, je continue à renforcer mes compétences techniques, à relever de nouveaux défis et à approfondir mes connaissances afin de créer des applications modernes, fiables et offrant une excellente expérience utilisateur.
+
         </p>
         <Button href="#contact">En savoir plus</Button>
       </div>

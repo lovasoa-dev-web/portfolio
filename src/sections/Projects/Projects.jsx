@@ -25,7 +25,7 @@ function Projects() {
       // linkGithub: '',
       link: 'https://restaurantmodel.sc3xksm4783.universe.wf/#home',
       h4: 'Restaurant',
-      p: 'Restaurant Website',
+      p: 'Projet de gestion de restaurant développé avec WordPress',
       description: "Projet de gestion de restaurant développé avec WordPress dans le cadre d'un projet académique. Cette plateforme permet aux visiteurs de découvrir le restaurant, consulter les menus, effectuer des réservations et accéder aux différentes informations de l'établissement à travers une interface moderne et responsive. Du côté administration, un espace dédié permet au restaurateur de gérer efficacement le contenu du site, les menus, les informations du restaurant ainsi que les différentes fonctionnalités nécessaires au bon fonctionnement de la plateforme.",
       technologie: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'Themify Ultra'],
       remarque: "Ce projet est actuellement hébergé dans un environnement de démonstration et n'est pas encore indexé par les moteurs de recherche.Selon le navigateur utilisé, un avertissement de sécurité peut apparaître lors de la première visite en raison du configuration temporaire du domaine de démonstration. Si un avertissement s'affiche, vous pouvez sélectionner « Avancé puis Continuer vers le site » afin d'accéder à la démonstration.",
@@ -137,7 +137,7 @@ function Projects() {
             <header className={styles['modal-header']}>
               <div>
                 <h2>{selectedProject.h4}</h2>
-                <p>{selectedProject.p}</p>
+                {/* <p>{selectedProject.p}</p> */}
               </div>
               <button
                 type="button"
@@ -231,7 +231,7 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='Pour accéder à la démo, cliquez sur ce lien. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder à la démonstration.'
+                      title='Cliquez sur ce lien pour accéder à la démo du projet. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder à la démonstration.'
                     >
                       Voir la démo
                     </a>
@@ -242,7 +242,7 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='Pour accéder au compte démo, cliquez sur ce lien. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                      title='Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
                     >
                       Compte Démo
                     </a>

@@ -68,7 +68,7 @@ function Contact() {
             placeholder="Message"
             required></textarea>
         </div>
-        <Button type="submit" className={styles.submitButton}>Submit</Button>
+        <Button type="submit" className={styles.submitButton}>Envoyé</Button>
       </form>
     </section>
   );
