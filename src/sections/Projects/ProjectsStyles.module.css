@@ -555,8 +555,7 @@
   .modal-body {
     gap: 1rem;
     padding: 0 0.9rem 1rem;
-    /* allow inner contents to expand and be visible; modal-content will handle scrolling */
-    overflow: visible;
+    overflow: auto;
   }
 
   .modal-image-wrapper {
