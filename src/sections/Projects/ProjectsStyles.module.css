@@ -241,9 +241,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .6rem;
-  padding: 0 1.2rem 1.5rem;
+  padding: 0 .5rem 1.2rem;
   min-height: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .modal-gallery {
@@ -257,7 +257,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.06);
-  aspect-ratio: 12/7;
+  aspect-ratio: 10/6;
   min-height: 260px;
 
 }
@@ -331,6 +331,7 @@
   overflow-y: auto;
   max-height: calc(90vh - 4.25rem);
   max-width: 100%;
+  padding: .5rem;
 }
 
 .modal-description,
@@ -339,7 +340,7 @@
 .modal-links {
   /* background: var(--surface-color);
   border-radius: 1.5rem; */
-  padding: 1rem;
+  padding: .2rem;
   /* border: 1px solid var(--surface-border-color); */
 }
 
@@ -436,14 +437,14 @@
 
   .modal-body {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: .5rem;
   }
   .modal-gallery{
     max-width: 100%;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 630px) {
   .portfolio {
     padding: 2rem 2rem;
   }
@@ -455,7 +456,7 @@
 
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 
   .portfolio-layer {
@@ -484,16 +485,16 @@
   }
 
   .modal-header h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .modal-body {
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0 1rem 1rem;
+    padding: 0 .5rem 1rem;
   }
 
   .modal-image-wrapper {
-    min-height: 220px;
+    min-height: 218px;
   }
 }
 
@@ -535,7 +536,7 @@
     width: calc(100vw - 1.5rem);
     border-radius: 1.5rem;
     /* allow scrolling on very small screens instead of hiding overflow */
-    overflow: hidden;
+    overflow: auto;
   }
 
   .modal-header {

@@ -41,7 +41,7 @@ function Projects() {
       p: 'Music Streaming App',
       description: 'Application de musique avec interface immersive, lecture de playlists, sections artistes et albums. Le design met l’accent sur l’expérience utilisateur mobile-first et l’ergonomie.',
       technologie: ['React', 'CSS', 'JavaScript', 'API'],
-      gallerie: [gallery3, gallery4, gallery5],
+      gallerie: [gallery3, gallery4],
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ function Projects() {
       p: 'Hamburger Restaurant',
       description: 'Landing page pour un restaurant de burgers avec animations d’interaction, menu responsive, et sections témoignages. Le projet est optimisé pour la conversion et la présentation produit.',
       technologie: ['HTML', 'CSS', 'JavaScript', 'Responsive'],
-      gallerie: [gallery2, gallery5, gallery6],
+      gallerie: [gallery2, gallery5],
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ function Projects() {
       p: 'Free Fire Game Website',
       description: 'Site produit autour du jeu Free Fire avec sections médias, fonctionnalités du jeu et visuels immersifs. Le focus est sur la présentation visuelle et l’expérience utilisateur moderne.',
       technologie: ['HTML', 'CSS', 'JavaScript', 'Animations'],
-      gallerie: [gallery4, gallery1, gallery6],
+      gallerie: [gallery4, gallery1],
     },
   ];
 
@@ -231,7 +231,9 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='Cliquez sur ce lien pour accéder à la démo du projet. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder à la démonstration.'
+                      title={selectedProject.remarque && (
+                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                      )}
                     >
                       Voir la démo
                     </a>
@@ -242,7 +244,9 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
-                      title='Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                      title={selectedProject.remarque && (
+                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                      )}
                     >
                       Compte Démo
                     </a>
