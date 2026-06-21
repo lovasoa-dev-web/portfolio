@@ -1,18 +1,21 @@
 import { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
 import Button from '../../common/Button.jsx';
-import gamerNet from '../../assets/viberr.png';
-import portfolioWebSite from '../../assets/fresh-burger.png';
 import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/fitlift.png';
 import restaurant from '../../assets/delice.png';
-import freeFire from '../../assets/free-fire.png';
 import gallery1 from '../../assets/ajoutReservation.png';
 import gallery2 from '../../assets/recette.png';
-import gallery3 from '../../assets/apropos.png';
-import gallery4 from '../../assets/contact.png';
 import gallery5 from '../../assets/galerie.png';
-import gallery6 from '../../assets/portfolio6.jpg';
+import portfolioWebSite from '../../assets/p1.png';
+import p2 from '../../assets/p2.png';
+import p3 from '../../assets/p3.png';
+import p4 from '../../assets/p4.png';
+import freeFire from '../../assets/free-fire.png';
+import f1 from '../../assets/f1.png';
+import f2 from '../../assets/f2.png';
+import f3 from '../../assets/f3.png';
+import gamerNet from '../../assets/viberr.png';
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -46,13 +49,13 @@ function Projects() {
     {
       id: 3,
       src: portfolioWebSite,
-      linkGithub: 'https://github.com/Ade-mir/company-landing-page-2',
-      link: 'https://freshburger.netlify.app/',
+      linkGithub: 'https://github.com/lovasoa-dev-web/portfolio',
+      link: 'https://lovasoa-william-portfolio.netlify.app/',
       h4: 'Portfolio Professionnel',
       p: 'Portfolio moderne interactif développé avec React et Vite',
       description: "Ce portfolio professionnel a été conçu pour présenter mon parcours, mes compétences techniques et les différents projets que j'ai réalisés dans le domaine du développement web.Développé avec React et Vite, il propose une interface moderne, responsive et optimisée pour offrir une expérience utilisateur fluide sur ordinateur, tablette et mobile.Le projet met en avant plusieurs fonctionnalités telles que la navigation fluide entre les sections, les animations interactives, la présentation détaillée des projets, le téléchargement du CV ainsi qu'un formulaire de contact permettant de faciliter les échanges professionnels.À travers ce projet, j'ai renforcé mes compétences en développement frontend, en conception d'interfaces utilisateur et en organisation d'une application React moderne.",
       technologie: ['React', 'JavaScript','html','css','git', 'CSS', 'aos'],
-      gallerie: [gallery2, gallery5],
+      gallerie: [p2, p3, p4],
     },
     {
       id: 4,
@@ -62,8 +65,8 @@ function Projects() {
       h4: 'Free Fire',
       p: 'Free Fire Game Website',
       description: 'Site produit autour du jeu Free Fire avec sections médias, fonctionnalités du jeu et visuels immersifs. Le focus est sur la présentation visuelle et l’expérience utilisateur moderne.',
-      technologie: ['HTML', 'CSS', 'JavaScript', 'Animations'],
-      gallerie: [gallery4, gallery1],
+      technologie: ['HTML', 'CSS', 'JavaScript'],
+      gallerie: [f1, f2, f3],
     },
   ];
 
