@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
 import Button from '../../common/Button.jsx';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
 import restaurant from '../../assets/delice.png';
 import gallery1 from '../../assets/ajoutReservation.png';
 import gallery2 from '../../assets/recette.png';
