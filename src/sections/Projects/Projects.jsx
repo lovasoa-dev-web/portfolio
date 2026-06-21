@@ -13,7 +13,7 @@ import freeFire from '../../assets/free-fire.png';
 import f1 from '../../assets/f1.png';
 import f2 from '../../assets/f2.png';
 import f3 from '../../assets/f3.png';
-import gamerNet from '../../assets/viberr.png';
+import gamerNet from '../../assets/g.png';
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
