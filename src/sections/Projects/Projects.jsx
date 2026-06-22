@@ -48,7 +48,7 @@ function Projects() {
       id: 3,
       src: portfolioWebSite,
       linkGithub: 'https://github.com/lovasoa-dev-web/portfolio',
-      link: 'https://lovasoa-william-portfolio.netlify.app/',
+      link: 'https://lovasoa-william-portfolio.vercel.app',
       h4: 'Portfolio Professionnel',
       p: 'Portfolio moderne interactif développé avec React et Vite',
       description: "Ce portfolio professionnel a été conçu pour présenter mon parcours, mes compétences techniques et les différents projets que j'ai réalisés dans le domaine du développement web.Développé avec React et Vite, il propose une interface moderne, responsive et optimisée pour offrir une expérience utilisateur fluide sur ordinateur, tablette et mobile.Le projet met en avant plusieurs fonctionnalités telles que la navigation fluide entre les sections, les animations interactives, la présentation détaillée des projets, le téléchargement du CV ainsi qu'un formulaire de contact permettant de faciliter les échanges professionnels.À travers ce projet, j'ai renforcé mes compétences en développement frontend, en conception d'interfaces utilisateur et en organisation d'une application React moderne.",
