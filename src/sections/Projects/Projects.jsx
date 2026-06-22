@@ -208,7 +208,7 @@ function Projects() {
 
                 <div className={styles['modal-remarque']}>
                   {selectedProject.remarque && (
-                    <p><span>⚠️ remarque : </span>{selectedProject.remarque}</p>)}
+                    <p><span>⚠️ Important : </span>{selectedProject.remarque}</p>)}
                 </div>
 
                 {selectedProject.linkMember && (
