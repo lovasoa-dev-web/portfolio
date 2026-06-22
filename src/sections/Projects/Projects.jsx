@@ -233,7 +233,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
                       title={selectedProject.remarque && (
-                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Paramètres avancés puis Continuer vers le site » pour accéder au compte de démonstration.'
                       )}
                     >
                       Voir la démo
@@ -246,7 +246,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className={`${styles['modal-link']} no-close`}
                       title={selectedProject.remarque && (
-                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Avancé puis Continuer vers le site » pour accéder au compte de démonstration.'
+                        'Cliquez sur ce lien pour accéder au compte démo. Si un avertissement de sécurité apparaît, sélectionnez « Paramètres avancés puis Continuer vers le site » pour accéder au compte de démonstration.'
                       )}
                     >
                       Compte Démo
